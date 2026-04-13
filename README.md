@@ -60,7 +60,7 @@ The task is formulated as a regression problem. Models include:
 - ✅ Literature review
 - ✅ Methodology design
 - ✅ Data preprocessing pipeline
-- 🔄 Feature extraction
+- ✅ Feature extraction
 - 🔄 Model development and evaluation
 - ⏳ Interpretability and fairness analysis
 
