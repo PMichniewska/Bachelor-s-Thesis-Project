@@ -1,0 +1,6 @@
+.claude/
+TESDHE/
+Thesis.env/
+*.parquet
+*.csv
+.DS_Store
