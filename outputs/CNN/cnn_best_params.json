@@ -1,0 +1,11 @@
+{
+  "module__pool_size": 4,
+  "module__n_filters": 16,
+  "module__kernel_size": 3,
+  "module__fc3_hidden": 32,
+  "module__fc2_hidden": 32,
+  "module__fc1_hidden": 128,
+  "module__dropout": 0.5,
+  "lr": 0.005,
+  "batch_size": 512
+}
