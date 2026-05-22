@@ -35,10 +35,7 @@ Thesis_local/
 │   └── Trial_feat_extraction.ipynb        # Exploratory feature extraction (before implementing in the pipeline)
 │
 ├── data/
-│   ├── TESDHE/                            # Raw audio recordings — NOT INCLUDED (see Data Access)
-│   ├── tesdhe_metadata.csv                # Speaker metadata (ID, language, gender, BPM)
-│   ├── stage_4_normalised.parquet         # Per-speaker MinMax normalised features (final input)
-│   # ... the rest of the files was ommited 
+│   # Files not included
 │
 └── outputs/
     ├── exploration/                        # EDA plots and summary CSVs
@@ -77,13 +74,11 @@ Thesis_local/
 
 ## Data Access
 
-> **The raw audio recordings (TESDHE/) are not included in this repository.**
+> **The raw audio recordings and extracted features are not included in this repository.**
 
 Access is subject to an End User License Agreement (EULA) signed with the dataset authors and the files exceed practical repository size limits. To obtain the data, contact the original authors:
 
 > Milton, A., & Monsely, K. A. (2018). Tamil and English speech database for heartbeat estimation. *International Journal of Speech Technology, 21*(4), 967–973. https://doi.org/10.1007/s10772-018-9557-y
-
-The extracted and preproccessed features and the metadata files are included, allowing the modelling pipeline (`Coding Pipeline.ipynb`) to be run without re-extracting features from raw audio.
 
 ---
 
