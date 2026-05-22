@@ -1,0 +1,14 @@
+,dtype,n_missing,n_unique
+file_name,str,0,10034
+language_code,str,0,2
+language,str,0,2
+speaker_id,int64,0,109
+gender,str,0,2
+age_raw,int64,0,83
+age_years,int64,0,25
+age_months,int64,0,12
+question_number,int64,0,67
+response_type_code,str,0,3
+response_type,str,0,3
+bpm,int64,0,126
+extension,str,0,1

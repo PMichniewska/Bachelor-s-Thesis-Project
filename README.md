@@ -1,7 +1,6 @@
 # Machine and Deep Learning Approaches to Heart Rate Estimation from Speech with Interpretability and Fairness Analysis
 
 **Author:** Patrycja Michniewska  
-**Student number:** 2112421  
 **Supervisor:** Dr. Wim Pouw  
 **Institution:** Tilburg University, School of Humanities and Digital Sciences, Department of Cognitive Science and Artificial Intelligence  
 **Submitted:** May 2026  
@@ -33,7 +32,7 @@ Thesis_local/
 │   ├── Coding Pipeline.ipynb              # Model training, evaluation, SHAP
 │   ├── XGBoost_New_Normalisation.ipynb    # Post-hoc: XGBoost with CMVN normalisation
 │   ├── XGBoost_Recording_Level.ipynb      # Post-hoc: XGBoost trained at recording level
-│   └── Trial_feat_extraction.ipynb        # Exploratory feature extraction (not part of final pipeline)
+│   └── Trial_feat_extraction.ipynb        # Exploratory feature extraction (before implementing in the pipeline)
 │
 ├── data/
 │   ├── TESDHE/                            # Raw audio recordings — NOT INCLUDED (see Data Access)
@@ -147,24 +146,6 @@ Python 3.12. Install dependencies with:
 pip install -r requirements.txt
 ```
 
-Core dependencies:
-
-```
-librosa==0.11
-opensmile==2.6
-xgboost
-torch==2.11
-skorch==1.3
-scikit-learn
-shap==0.51
-pandas==3.0
-numpy==2.4
-scipy
-pyarrow
-fastparquet
-matplotlib
-seaborn
-```
 
 > Experiments were run on an Apple MacBook Pro with an M1 chip. GPU acceleration was not used. Training the CNN-R with hyperparameter search may take several hours on CPU.
 
@@ -181,21 +162,9 @@ All random seeds are fixed (seed = 42) throughout to ensure reproducibility.
 
 ---
 
-## Citation
-
-If you use this code or build on this work, please cite:
-
-```
-Michniewska, P. (2026). Machine and deep learning approaches to heart rate estimation 
-from speech with interpretability and fairness analysis [Bachelor's thesis]. 
-Tilburg University.
-```
-
----
-
 ## License
 
-This repository is shared for academic and research purposes. The code is released under the MIT License. The TESDHE dataset is subject to its own EULA and is not covered by this license.
+This repository is shared for academic and research purposes. The TESDHE dataset is subject to its own EULA and is not covered by this license.
 
 ---
 
