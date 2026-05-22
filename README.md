@@ -37,17 +37,8 @@ Thesis_local/
 ├── data/
 │   ├── TESDHE/                            # Raw audio recordings — NOT INCLUDED (see Data Access)
 │   ├── tesdhe_metadata.csv                # Speaker metadata (ID, language, gender, BPM)
-│   ├── recordings_index.csv               # Index of all recordings
-│   ├── stage_0_raw.parquet                # Raw frame-level features
-│   ├── stage_1_raw_filled.parquet         # Forward-filled prosodic features
-│   ├── stage_2_window_stats.parquet       # Windowed statistical features (entropy, skewness, kurtosis)
-│   ├── stage_3_window_stats_filled.parquet# NaN-filled windowed features (pre-normalisation)
 │   ├── stage_4_normalised.parquet         # Per-speaker MinMax normalised features (final input)
-│   ├── X_train / X_val / X_test.parquet   # Speaker-independent 70/15/15 feature splits
-│   ├── y_train / y_val / y_test.parquet   # Corresponding BPM targets
-│   ├── groups_train/val/test.parquet      # Speaker and file metadata aligned to splits
-│   ├── xgb_best_params.json               # Best XGBoost hyperparameters from tuning
-│   └── new_norm/                          # Feature splits produced with CMVN normalisation
+│   # ... the rest of the files was ommited 
 │
 └── outputs/
     ├── exploration/                        # EDA plots and summary CSVs
@@ -92,7 +83,7 @@ Access is subject to an End User License Agreement (EULA) signed with the datase
 
 > Milton, A., & Monsely, K. A. (2018). Tamil and English speech database for heartbeat estimation. *International Journal of Speech Technology, 21*(4), 967–973. https://doi.org/10.1007/s10772-018-9557-y
 
-All intermediate Parquet files (stages 0–4) and split files are included, allowing the modelling pipeline (`Coding Pipeline.ipynb`) to be run without re-extracting features from raw audio.
+The extracted and preproccessed features and the metadata files are included, allowing the modelling pipeline (`Coding Pipeline.ipynb`) to be run without re-extracting features from raw audio.
 
 ---
 
